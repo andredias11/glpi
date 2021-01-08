@@ -1,21 +1,11 @@
 #On choisit une debian
 FROM debian:10.4
 
-MAINTAINER DiouxX "github@diouxx.be"
+MAINTAINER "andredias"
 
 #Ne pas poser de question à l'installation
 ENV DEBIAN_FRONTEND noninteractive
 ENV GLPI_LANG pt_BR
-
-ENV MARIADB_HOST 150.164.192
-
-ENV MARIADB_PORT 3306
-
-ENV MARIADB_DATABASE glpi
-
-ENV MARIADB_USER glpi
-
-ENV MARIADB_PASSWORD glpi
 
 #Installation d'apache et de php7.3 avec extension
 RUN apt update \
